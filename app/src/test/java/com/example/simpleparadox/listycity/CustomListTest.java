@@ -31,4 +31,12 @@ class CustomListTest {
         assertFalse(list.hasCity(new City("Nowhere", "Nowhere")));
     }
 
+    @Test
+    void testDelete() throws Exception {
+        City city = new City("Edmonton", "AB");
+        assertThrows(Exception.class, () -> list.delete(city));
+        list.addCity(city);
+        list.delete(city);
+    }
+
 }
