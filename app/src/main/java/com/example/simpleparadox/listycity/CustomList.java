@@ -85,4 +85,13 @@ public class CustomList extends ArrayAdapter<City> {
             throw new Exception();
         }
     }
+
+    /**
+     * Check how many cities are in the list
+     * NOTE: identical to getCount(), but that's what the lab instructions said...
+     * @return
+     */
+    public int countCities() {
+        return 0;
+    }
 }
