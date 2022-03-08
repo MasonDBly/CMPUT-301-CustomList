@@ -43,13 +43,13 @@ class CustomListTest {
     void testCountCities() throws Exception {
         City city = new City("Regina", "Saskatchewan");
 
-        assertEquals(1, list.countCities());
+        assertEquals(0, list.countCities());
 
         list.addCity(city);
-        assertEquals(2, list.countCities());
+        assertEquals(1, list.countCities());
 
         list.delete(city);
-        assertEquals(1, list.countCities());
+        assertEquals(0, list.countCities());
 
     }
 
